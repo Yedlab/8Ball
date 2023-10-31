@@ -1,12 +1,13 @@
 <?php
 
-function magic8Ball(){
+function magic8Ball()
+{
   echo "What does thy wish to know?\n";
-  $question = readline(">> ");
+    $question = readline(">> ");
   echo "\nI see... Your question is :" . " $question?... I understand this weighs heavily on you.. I have consulted the spirit world.\nHere is your answer" . ": ";
   
   $choice = rand(0, 19);
-  return $choice;
+  //echo $choice;
     switch($choice)
     {
       case 0:
@@ -69,11 +70,10 @@ function magic8Ball(){
       case 19:
         echo "Very doubtful.\n";
           break;
-
     }
 }
 
-//echo magic8Ball(2);
+echo magic8Ball();
 //echo "\n";
 //echo magic8Ball(4);
 //echo "\n";
